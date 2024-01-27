@@ -15,6 +15,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.lwons.wiserbudget.screens.home.pages.DetailPage
 import com.lwons.wiserbudget.screens.home.pages.DiscoverPage
 import com.lwons.wiserbudget.screens.home.pages.GraphicsPage
@@ -54,3 +55,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Preview
+@Composable
+fun PreviewHomeScreen() = HomeScreen()

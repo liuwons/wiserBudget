@@ -64,7 +64,22 @@ object Categories {
             Category(7, "Shopping", R.drawable.shopping_cart),
             Category(8, "Sports", R.drawable.sports_tennis),
             Category(9, "Traffic", R.drawable.taxi),
-            Category(10, "Toys", R.drawable.toys)
+            Category(10, "Toys", R.drawable.toys),
+            Category(11, "Child", R.drawable.child),
+            Category(12, "Snack", R.drawable.cafe),
+            Category(13, "Gift", R.drawable.cake),
+            Category(14, "Pet", R.drawable.raven),
+            Category(15, "Clothes", R.drawable.apparel),
+            Category(16, "Redeem", R.drawable.redeem),
+            Category(17, "Jewelry", R.drawable.diamond),
+            Category(18, "Fruit", R.drawable.nutrition),
+            Category(19, "Vegetable", R.drawable.terminal),
+            Category(20, "Book", R.drawable.book),
+            Category(21, "Communication", R.drawable.call),
+            Category(22, "Car", R.drawable.car_repair),
+            Category(23, "Cigarette", R.drawable.smoking_rooms),
+            Category(24, "Fitness", R.drawable.fitness_center),
+            Category(25, "Game", R.drawable.stadia_controller),
         )
     }
 
