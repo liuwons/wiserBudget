@@ -30,26 +30,25 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         bottomBar = { Toolbar(modifier = modifier, selectedTab = currentTab, tabChangeListener = { currentTab = it }) },
         floatingActionButton = { ActionButton { showAppend = true } }) { padding ->
 
-        Box {
+        Box(modifier = Modifier.fillMaxSize().padding(padding)) {
             when (currentTab) {
                 TAB_DETAIL -> {
-                    DetailPage(modifier = modifier.padding(padding))
+                    DetailPage(modifier = Modifier.fillMaxSize())
                 }
                 TAB_GRAPH -> {
-                    GraphicsPage(modifier = modifier.padding(padding))
+                    GraphicsPage(modifier = Modifier.fillMaxSize())
                 }
                 TAB_DISCOVER -> {
-                    DiscoverPage(modifier = modifier.padding(padding))
+                    DiscoverPage(modifier = Modifier.fillMaxSize())
                 }
                 else -> {
-                    SettingsPage(modifier = modifier.padding(padding))
+                    SettingsPage(modifier = Modifier.fillMaxSize())
                 }
             }
 
             if (showAppend) {
-                AppendExpensePage(modifier = modifier.padding(padding), onDismiss = { showAppend = false }) { tab, name, amount ->
+                AppendExpensePage(modifier = Modifier.fillMaxSize(), onDismiss = { showAppend = false }) { tab, name, amount ->
                     showAppend = false
-
                 }
             }
         }
